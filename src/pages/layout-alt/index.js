@@ -1,5 +1,4 @@
-import { BaseElement } from '../../core/base/BaseElement.js'
-import { html, styleMap } from '../../core/utils/html.js'
+const { BaseElement, html, styleMap } = dim
 
 class LayoutAltPage extends BaseElement {
 	constructor() {
@@ -18,9 +17,7 @@ class LayoutAltPage extends BaseElement {
 			'text-align': 'center',
 			color: 'var(--color-gray-100)',
 		}
-
 		const sidebarContent = html` <p style="${styleMap(styles)}">Sidebar Content 💧</p> `
-
 		window.dispatchEvent(
 			new CustomEvent('set-sidebar-content', {
 				detail: { content: sidebarContent },

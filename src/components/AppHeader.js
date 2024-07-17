@@ -1,5 +1,4 @@
-import { ShadowElement } from '../core/base/ShadowElement.js'
-import { html } from '../core/utils/html.js'
+const { ShadowElement, html } = dim
 
 class AppHeader extends ShadowElement {
 	render() {

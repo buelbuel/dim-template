@@ -1,5 +1,4 @@
-import { BaseElement } from '../core/base/BaseElement.js'
-import { html } from '../core/utils/html.js'
+const { BaseElement, html } = dim
 
 class StartPage extends BaseElement {
 	constructor() {

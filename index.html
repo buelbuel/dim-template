@@ -5,7 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" href="/src/assets/static/favicon.ico" />
 		<link rel="stylesheet" href="/src/assets/styles/main.css" />
-		<script type="module" src="https://cdn.jsdelivr.net/gh/yourusername/dim@v1.0.0/dist/dim-core.min.js"></script>
+		<script type="module">
+			import * as dim from 'https://cdn.jsdelivr.net/gh/buelbuel/dim@v0.0.3/dist/dim.min.js'
+			window.dim = dim
+		</script>
+		<script type="module" src="/src/index.js"></script>
 		<meta name="description" content="dim is a highly opinionated web component boilerplate." />
 		<title>dim</title>
 	</head>
