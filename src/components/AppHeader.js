@@ -8,6 +8,7 @@ class AppHeader extends ShadowElement {
 					<a class="app-header__link" href="/">Start</a>
 					<a class="app-header__link" href="/layout-alt">Layout Alt</a>
 					<a class="app-header__link" href="https://github.com/buelbuel/dim">GitHub</a>
+					<language-component></language-component>
 				</nav>
 			</header>
 
