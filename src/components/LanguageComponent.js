@@ -12,10 +12,28 @@ class LanguageComponent extends BaseElement {
 				<option value="en" ${this.currentLanguage === 'en' ? 'selected' : ''}>
 					English
 				</option>
-				<option value="es" ${this.currentLanguage === 'es' ? 'selected' : ''}>
-					Español
+				<option value="de" ${this.currentLanguage === 'de' ? 'selected' : ''}>
+					Deutsch
 				</option>
 			</select>
+
+			<style>
+				select {
+					padding: 0.5rem 1rem;
+					border-color: var(--color-gray-800);
+					border-width: 2px;
+					border-style: solid;
+					background-color: var(--color-gray-800);
+					color: var(--color-white);
+					font-size: var(--font-size-base);
+					cursor: pointer;
+
+					&:hover {
+						background-color: var(--color-white);
+						color: var(--color-gray-800);
+					}
+				}
+			</style>
 		`
 	}
 

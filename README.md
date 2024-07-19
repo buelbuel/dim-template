@@ -100,3 +100,17 @@ Define different layouts in `index.html` using `<template>` tags and specify the
 ### Styling
 
 Use the `styleMap` utility for inline styles or include CSS in your component's render method.
+
+### Internationalization
+
+```js
+const { i18n } = dim
+
+i18n.addTranslations('en', {
+	'hello': 'Hello',
+})
+
+const { t } = dim
+
+<p>${t('hello')}</p>
+```

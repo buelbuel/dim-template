@@ -23,7 +23,7 @@ class ButtonComponent extends ShadowElement {
 					border-style: solid;
 					background-color: var(--color-gray-800);
 					color: var(--color-white);
-					font-size: 1rem;
+					font-size: var(--font-size-base);
 					cursor: pointer;
 
 					&:hover {

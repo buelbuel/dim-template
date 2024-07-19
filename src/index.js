@@ -20,12 +20,12 @@ import './components/LanguageComponent.js'
  * Adds the translations to the i18n utility
  *
  * @param {Object} enTranslations - The translations for English.
- * @param {Object} esTranslations - The translations for Spanish.
+ * @param {Object} deTranslations - The translations for German.
  */
 import enTranslations from './locales/en.js'
-import esTranslations from './locales/es.js'
+import deTranslations from './locales/de.js'
 i18n.addTranslations('en', enTranslations)
-i18n.addTranslations('es', esTranslations)
+i18n.addTranslations('de', deTranslations)
 
 /**
  * Initializes the application

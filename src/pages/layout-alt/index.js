@@ -1,10 +1,8 @@
-const { BaseElement, html, styleMap } = dim
+const { BaseElement, html, styleMap, t } = dim
 
 class LayoutAltPage extends BaseElement {
 	constructor() {
 		super()
-		this.setAttribute('title', 'Alternative Layout')
-		this.setAttribute('description', 'Alternative layout of the application.')
 	}
 
 	connectedCallback() {
@@ -18,7 +16,7 @@ class LayoutAltPage extends BaseElement {
 			color: 'var(--color-gray-100)',
 		}
 
-		const sidebarContent = html` <p style="${styleMap(styles)}">Sidebar Content 💧</p> `
+		const sidebarContent = html` <p style="${styleMap(styles)}"></p> `
 
 		window.dispatchEvent(
 			new CustomEvent('set-sidebar-content', {
@@ -30,8 +28,8 @@ class LayoutAltPage extends BaseElement {
 	render() {
 		return html`
 			<section class="layout-b-page container">
-				<h1>Alternative Layout.</h1>
-				<p>Define different layouts in index.html using &lt;template&gt;.</p>
+				<h1>${t('layoutAlt.title')}</h1>
+				<p>${t('layoutAlt.description')}</p>
 			</section>
 		`
 	}

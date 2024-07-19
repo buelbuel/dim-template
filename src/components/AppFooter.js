@@ -1,12 +1,10 @@
-const { ShadowElement, html } = dim
+const { ShadowElement, html, t } = dim
 
 class AppFooter extends ShadowElement {
 	render() {
 		return html`
 			<footer class="app-footer">
-				<p class="app-footer__p container">
-					You could edit me over at <code>src/components/AppFooter.js</code>.
-				</p>
+				<p class="app-footer__p container">${t('footer.text')}</p>
 			</footer>
 
 			<style>

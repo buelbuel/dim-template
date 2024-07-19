@@ -9,11 +9,13 @@ export const routes = {
 	'/': {
 		component: () => import('./pages/index.js'),
 		layout: 'main-layout',
-		title: 'Start',
+		titleKey: 'start.title',
+		descriptionKey: 'start.description',
 	},
 	'/layout-alt': {
 		component: () => import('./pages/layout-alt/index.js'),
 		layout: 'alternate-layout',
-		title: 'Alternative Layout',
+		titleKey: 'layoutAlt.title',
+		descriptionKey: 'layoutAlt.description',
 	},
 }
