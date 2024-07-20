@@ -62,6 +62,11 @@ class AppHeader extends ShadowElement {
 		})
 	}
 
+	/**
+	 * Handle link click events.
+	 * @param {MouseEvent} event
+	 * @returns {void}
+	 */
 	handleLinkClick(event) {
 		event.preventDefault()
 		const anchor = event.target.closest('a')
@@ -71,6 +76,12 @@ class AppHeader extends ShadowElement {
 		}
 	}
 
+	/**
+	 * Debounce a function.
+	 * @param {Function} func
+	 * @param {number} wait
+	 * @returns {Function}
+	 */
 	debounce(func, wait) {
 		let timeout
 		return function (...args) {

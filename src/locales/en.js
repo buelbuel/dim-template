@@ -1,6 +1,4 @@
-/**
- * @exports {Object} default - The translations for English.
- */
+/** @exports {Object} default - The translations for English. */
 export default {
 	start: {
 		title: 'Start',

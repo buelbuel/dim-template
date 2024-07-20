@@ -11,6 +11,8 @@ class StartPage extends BaseElement {
 			<section class="start-page container">
 				<h1>${t('start.editMe')}</h1>
 				<p>${t('start.description')}</p>
+				<login-form></login-form>
+				<register-form></register-form>
 				<div>
 					<button-component id="increment">Increment ${this.count}</button-component>
 				</div>

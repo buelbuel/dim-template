@@ -19,6 +19,11 @@ class AppSidebar extends ShadowElement {
 		window.removeEventListener('set-sidebar-content', this.handleSetContent.bind(this))
 	}
 
+	/**
+	 * Handle the set-sidebar-content event.
+	 * @param {CustomEvent} event
+	 * @returns {void}
+	 */
 	handleSetContent(event) {
 		const content = event.detail.content
 		const slot = this.shadowRoot.querySelector('slot')

@@ -1,7 +1,5 @@
 /**
  * Defines the routes of the application.
- *
- * @module routes
  * @param {Object} routes - The routes of the application.
  * @returns {Object} The routes of the application.
  */
