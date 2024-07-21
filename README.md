@@ -1,4 +1,5 @@
-# dim-template
+[![](https://data.jsdelivr.com/v1/package/gh/buelbuel/dim/badge?style=rounded)](https://www.jsdelivr.com/package/gh/buelbuel/dim)
+![GitHub License](https://img.shields.io/github/license/buelbuel/dim)
 
 This is a highly opinionated web component boilerplate using [dim](https://github.com/buelbuel/dim), designed as a sane alternative to the node madness of todays web. It focuses on simplicity and adherence to web standards only, offering some of the quality-of-life features found in lit, but with zero dependencies.
 

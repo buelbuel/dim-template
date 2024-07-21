@@ -6,14 +6,14 @@
  */
 const { initRouter } = dim
 import { routes } from './routes.js'
-import { setupI18n } from './config/i18n.js'
+import { setupI18n } from '@config/i18n.js'
 
 /** Importing all components */
-import './components/AppHeader.js'
-import './components/AppFooter.js'
-import './components/AppSidebar.js'
-import './components/ButtonComponent.js'
-import './components/LanguageComponent.js'
+import '@components/AppHeader.js'
+import '@components/AppFooter.js'
+import '@components/AppSidebar.js'
+import '@components/ButtonComponent.js'
+import '@components/LanguageComponent.js'
 
 /**
  * Initializes the application

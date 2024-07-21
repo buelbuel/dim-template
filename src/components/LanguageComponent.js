@@ -38,11 +38,15 @@ class LanguageComponent extends BaseElement {
 	}
 
 	addEventListeners() {
-		this.addEventListenerWithCleanup('#language-select', 'change', (e) => {
-			const newLang = e.target.value
-			i18n.setLanguage(newLang)
-			this.currentLanguage = newLang
-		})
+		this.addEventListenerWithCleanup(
+			'#language-select',
+			'change',
+			(/** @type {{ target: { value: any; }; }} */ e) => {
+				const newLang = e.target.value
+				i18n.setLanguage(newLang)
+				this.currentLanguage = newLang
+			}
+		)
 	}
 }
 

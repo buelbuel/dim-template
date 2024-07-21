@@ -51,15 +51,27 @@ class AppHeader extends ShadowElement {
 	}
 
 	addEventListeners() {
-		this.shadowRoot.querySelectorAll('a').forEach((link) => {
-			link.addEventListener('click', this.debounce(this.handleLinkClick, 300))
-		})
+		this.shadowRoot
+			.querySelectorAll('a')
+			.forEach(
+				(
+					/** @type {{ addEventListener: (arg0: string, arg1: Function) => void; }} */ link
+				) => {
+					link.addEventListener('click', this.debounce(this.handleLinkClick, 300))
+				}
+			)
 	}
 
 	removeEventListeners() {
-		this.shadowRoot.querySelectorAll('a').forEach((link) => {
-			link.removeEventListener('click', this.handleLinkClick)
-		})
+		this.shadowRoot
+			.querySelectorAll('a')
+			.forEach(
+				(
+					/** @type {{ removeEventListener: (arg0: string, arg1: (event: MouseEvent) => void) => void; }} */ link
+				) => {
+					link.removeEventListener('click', this.handleLinkClick)
+				}
+			)
 	}
 
 	/**
@@ -83,8 +95,11 @@ class AppHeader extends ShadowElement {
 	 * @returns {Function}
 	 */
 	debounce(func, wait) {
+		/**
+		 * @type {number | undefined}
+		 */
 		let timeout
-		return function (...args) {
+		return function (/** @type {any} */ ...args) {
 			const later = () => {
 				clearTimeout(timeout)
 				func(...args)
