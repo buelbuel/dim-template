@@ -14,7 +14,8 @@
 			"extensions": [
 				"ms-azuretools.vscode-docker",
 				"esbenp.prettier-vscode",
-				"bierner.lit-html"
+				"bierner.lit-html",
+				"ms-vscode.vscode-typescript-next"
 			],
 			"settings": {
 				"prettier.printWidth": 100,
@@ -41,5 +42,7 @@
 	},
 	"postCreateCommand": "apk add --no-cache nginx && echo > /etc/environment && echo 'events {} http { include /etc/nginx/mime.types; server { listen 8080; server_name localhost; root /workspaces/${localWorkspaceFolderBasename}; index index.html; location / { try_files $uri $uri/ /index.html; } location ~* \\.(js|css|json)$ { add_header Content-Type application/javascript; } } }' > /etc/nginx/nginx.conf",
 	"postStartCommand": "nginx",
-	"forwardPorts": [8080]
+	"forwardPorts": [
+		8080
+	]
 }

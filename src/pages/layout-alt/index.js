@@ -13,7 +13,7 @@ class LayoutAltPage extends BaseElement {
 	setSidebarContent() {
 		const styles = {
 			'text-align': 'center',
-			color: 'var(--color-gray-100)',
+			color: 'var(--color-gray-100)'
 		}
 
 		const sidebarContent = html` <p style="${styleMap(styles)}"></p> `

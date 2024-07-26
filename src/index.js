@@ -7,6 +7,7 @@
 const { initRouter } = dim
 import { routes } from './routes.js'
 import { setupI18n } from '@config/i18n.js'
+window.APP_TITLE = 'dim Template'
 
 /** Importing all components */
 import '@components/AppHeader.js'
